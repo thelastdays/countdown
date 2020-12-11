@@ -1,0 +1,161 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>D-Day!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <style type="text/css">
+
+  /** GLOBAL styles **/
+
+    body {
+      background: #fafa;
+      color: rgba(0,0,0,0.90); /* better text color */
+    }
+
+    .text--center {
+      text-align: center;
+    }
+
+    .text--bold {
+      font-weight: bold;
+    }
+
+    .text--small {
+      font-size: 0.75rem;
+    }
+
+    .text--smaller {
+      font-size: 0.56rem;
+    }
+
+    .text--sans-serif {
+      font-family: sans-serif, Helvetica;
+      line-height: 1.5;
+    }
+
+    .text--allcaps {
+      text-transform: uppercase;
+    }
+
+    /* headline text */
+    .h--headline {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    .divider {
+      border: none;
+      background: rgba(0,0,0, 0.90);
+      height: 1px;
+      margin: 1rem auto;
+      width: 90%;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 36rem;
+      margin: auto;
+    }
+
+
+  /** CLOCK Module **/  
+    .clock {
+      font-size: 1rem;
+    }
+
+    /* clock flex container & settings */
+    .clock__flex {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* basic scaleable type: 
+        (target font size) / (target Screen) * 100% viewport width (vw)
+
+        more resources:
+        https://www.smashingmagazine.com/2017/05/fluid-responsive-typography-css-poly-fluid-sizing/  */
+    .days {
+      font-size: calc(72/479*100vw);
+    }
+
+    .minutes {
+      margin-left: 1rem;
+    }
+
+  </style>
+</head>
+
+<body class="container text--center">
+
+  <!-- Add your site or application content here -->
+
+  <header role="banner">
+    <h1 class="h--headline">Hello World. 
+      <span id="date">Today is <span class="current-date"></span></span>
+    </h1>
+    <hr class="divider" /> 
+  </header>
+
+  <div id="clockdiv" class="clock">
+    <p style="margin: 3em auto 0;">
+      <span class="days"></span>
+      <span>Days</span>
+    </p>
+
+    <div class="clock__flex">
+      <p class="text--small" style="margin-top: 0;">
+        <span class="hours"></span>
+          <span>Hours</span>
+      </p>
+      <p class="text--small" style="margin-top: 0;">
+        <span class="minutes"></span>
+          <span>Minutes</span>
+      </p>
+    </div>
+  </div>
+
+  <p class="text--allcaps">Remaining Untill D-Day</br>
+    <span class="text--sans-serif text--smaller">(Jan. 20 - Presidential Inauguration 2020)</span>
+  </p>
+
+  <p class="text--sans-serif text--small container">
+    Will the ELITE GLOBALIST'S get their way? Or will Donald J. Trump preveil against the plans and establishment of a SECRET compromised shadow Government and remain President of the United States of America..
+  </p>
+
+  <p class="text--allcaps">Only God Knows</p>
+
+
+  <!-- // <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script> // -->
+  <script src="js/app.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- // 
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  // -->
+
+</body>
+
+</html>
